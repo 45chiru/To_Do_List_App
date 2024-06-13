@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #000850 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #FF7A00 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+background-blend-mode: screen, overlay, hard-light, normal;
+
+}
+h2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+
+}
+h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.box{
+    position: relative;
+   max-width: 540px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 14px;
+    background: linear-gradient(115deg, rgb(211, 255, 215) 0%, rgb(0, 0, 0) 100%), radial-gradient(90% 100% at 50% 0%, rgb(200, 200, 200) 0%, rgb(22, 0, 45) 100%), radial-gradient(100% 100% at 80% 0%, rgb(250, 255, 0) 0%, rgb(36, 0, 0) 100%), radial-gradient(150% 210% at 100% 0%, rgb(112, 255, 0) 0%, rgb(20, 175, 125) 0%, rgb(0, 10, 255) 100%), radial-gradient(100% 100% at 100% 30%, rgb(255, 77, 0) 0%, rgba(0, 200, 255, 1) 100%), linear-gradient(60deg, rgb(255, 0, 0) 0%, rgb(120, 86, 255) 100%);
+    background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+    box-shadow: 25px 25px 75px rgba(0,0,0, 0.25),10px 10px 70px rgba(0,0,0, 0.25),
+    inset 5px 5px 10px rgba(0,0,0, 0.5),
+    inset 5px 5px 20px rgba(255,255,255, 0.2),
+    inset -5px -5px 15px rgba(0,0,0, 0.75);
+}
+#inputBx{
+    flex: 1;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #CDFFEB;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+#btn{
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff5945;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: rgb(251, 252, 251);
+}
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: #dbe4ee;
+    border-radius: 50%;
+    background-image: url("pic/uncheck.png");
+    background-size: cover;
+    background-position: center;
+}
+ul li.checked{
+    color: rgb(10, 255, 128);
+}
+ul li.checked::before{
+    background-image: url("pic/checked.png");
+}
+ul li button{
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    font-size: 15px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    color: #fafaf9;
+    background-color: #ee822a;
+}
+ul li button:hover{
+    background: #1b02f8;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: #ee822a;
+}
+ul li span:hover{
+    background: #1b02f8;
+}
